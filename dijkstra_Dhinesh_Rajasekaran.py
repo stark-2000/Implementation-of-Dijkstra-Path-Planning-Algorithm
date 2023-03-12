@@ -1,6 +1,7 @@
 import time
-import os
-
+import numpy as np
+from visualization import visualization
+import cv2
 
 
 class action_set():
@@ -41,48 +42,61 @@ class action_set():
         return node_op
 
 
-p1 = action_set()
-class dijkstra_algo():
-    def __init__(self):
+
+                
+# p2 = action_set()
+# class dijkstra_algo():
+#     def __init__(self):
     
-    def check_if_obstacle(self, node):
-        return 1
-        return 0
+#     def check_if_obstacle(self, node):
+#         return True
+#         return False
 
-    def check_if_goal_node(self, node):
-        return True
-        return False
+#     def check_if_goal_node(self, node):
+#         return True
+#         return False
     
-    def graph_search(self):
+#     def graph_search(self, start_node, goal_node):
+#         path = []
 
-    def backtrack(self):
-        return path #start to goal
-    
+#         return path
 
-class visualization():
-    def __init__(self):
-
-    def GUI_opencv(self): #node exploration & optimal path
-
+#     def backtrack(self):
+#         return path #start to goal
     
 
-p2 = dijkstra_algo()
-p3 = visualization()
+
+
+    
+p1 = visualization()
+# p3 = dijkstra_algo()
 def main():
     start_time = time.time()
 
+    image = p1.map_half_plane()
+    image = cv2.rotate(image, cv2.ROTATE_90_COUNTERCLOCKWISE)
+    cv2.imshow("Map", image)
+    cv2.waitKey(0)
+
     print("Enter Start Node: ")
-    start_node = input()
+    start_x, start_y = input().split(',')
+    start_node = (int(start_x.strip()), int(start_y.strip()))
+
 
     print("Enter Goal Node: ")
-    goal_node = input()
+    goal_x, goal_y = input().split(',')
+    goal_node = (int(goal_x.strip()), int(goal_y.strip()))
 
-    if p2.check_if_obstacle(start_node):
-        print("\nInvalid Start Node.. Re-Enter the Start node: ")
+    # if p3.check_if_obstacle(start_node):
+    #     print("\nInvalid Start Node.. Re-Enter the Start node: ")
+    #     start_node = input()
 
-    if p2.check_if_obstacle(goal_node):
-        print("\nInvalid Goal Node.. Re-Enter the Goal node: ")
+    # if p3.check_if_obstacle(goal_node):
+    #     print("\nInvalid Goal Node.. Re-Enter the Goal node: ")
+    #     goal_node = input()
         
+    # path = p3.graph_search(start_node, goal_node)
+
 
 
     end_time = time.time()
