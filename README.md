@@ -31,15 +31,15 @@
 
 ## Obstacle Space - Map:
     - Adobe Photoshop generated:
-    ![My Image](./readme_image/Canvas.png)
+    ![My Image](readme_image/Canvas.png)
 
     - Desmos Visualization:
-    ![My Image](./readme_image/Canvas_Desmos.png)
+    ![My Image](readme_image/Canvas_Desmos.png)
     
 
 ## Demo Video:
     
-    ![My Image](./readme_image/Animation_Video_Output.mp4)
+    ![My Image](readme_image/Animation_Video_Output.mp4)
     
 
 ## Dependencies:
