@@ -10,7 +10,7 @@
     cd Implementation-of-Dijkstra-Path-Planning-Algorithm
     ```
 
-- Alternatively, you can download the zip file of the repository and extract it to your local machine.
+- Alternatively, you can download the zip file of the repository and extract it to your local machine:
     ```
     cd proj2_dhinesh_rajasekaran
     ```
@@ -19,7 +19,7 @@
     ```
     python3 dijkstra_Dhinesh_Rajasekaran.py
     ```
-- Now for Test Case 1, Enter the following values when prompted or any random values of your choice
+- Now for Test Case 1, Enter the following values when prompted or any random values of your choice:
     - Enter the start node as "20,20"
     - Enter the goal node as "425,200"
 
