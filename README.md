@@ -52,22 +52,22 @@ https://user-images.githubusercontent.com/78305300/224716580-2c29afed-6261-4706-
     - It is already included in the repository in the same folder. Make sure you are running dijkstra_Dhinesh_Rajasekaran.py script from the same folder.
 
  - Numpy library
-    - (if req open terminal and run the following commands)
+    - if req open terminal and run the following commands
     ```
     sudo pip install numpy
     ```
 - openCV library
-    - (if req open terminal and run the following commands)
+    - if req open terminal and run the following commands
     ```
     sudo pip install opencv-contrib-python
     ```
 - time library
-    - (if req open terminal and run the following commands)
+    - if req open terminal and run the following commands
     ```
     sudo pip install time
     ```
 - heapq library
-    - (if req open terminal and run the following commands)
+    - if req open terminal and run the following commands
     ```
     sudo pip install heapq
     ```
