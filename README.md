@@ -30,17 +30,22 @@
 
 
 ## Obstacle Space - Map:
-    - Adobe Photoshop generated:
+   - Adobe Photoshop generated:
+   <p align="center">
    ![My Image](readme_image/Canvas.png)
+   </p>
 
-    - Desmos Visualization:
+   - Desmos Visualization:
+   <p align="center">
    ![My Image](readme_image/Canvas_Desmos.png)
+   </p>
     
 
 ## Demo Video:
-    
-   ![My Image](readme_image/Animation_Video_Output.mp4)
-    
+ - Video shows exploration of nodes and finding the goal node for a point robot given start & goal nodes. Once the shortest path is found, it is backtracked and visualized using openCV.
+   
+https://user-images.githubusercontent.com/78305300/224716580-2c29afed-6261-4706-a8f3-ef806391cdf0.mp4
+
 
 ## Dependencies:
  - visulization.py file (map creation and visualization script)
