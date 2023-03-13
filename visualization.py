@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 #Map Creation using Half Plane Method & OpenCV
 class visualization():
@@ -37,7 +38,7 @@ class visualization():
         trig_b = [(455,5), (515,125), (455,245), (455,5)] #Triangle obstacle
         walls = [(5, 5), (595,5), (595,245), (5,245), (5,5)] #Boundary of the map
 
-        image = np.zeros((600, 250, 3), np.uint8) #create a new image with a black background
+        self.image = np.zeros((600, 250, 3), np.uint8) #create a new image with a black background
 
         for i in range(len(rect1_n)-1): #Find the equation of all the lines of rect obstacles
             self.rect1_n_eq.append(self.line_eq(rect1_n[i], rect1_n[i+1])) #Normal rect obstacle eqn
@@ -67,29 +68,37 @@ class visualization():
             for j in range(0, 250): 
                 if (check_poly(self.rect1_b_eq, i, j) == True): #Check if the node is inside the bloated rect 1 obstacle space
                     if (check_poly(self.rect1_n_eq, i, j) == True): #Check if the node is inside the normal rect 1 obstacle space
-                        image[i][j] = [255, 255, 255]
+                        self.image[i][j] = [255, 255, 255]
                     else:
-                        image[i][j] = [255, 191, 0]
+                        self.image[i][j] = [255, 191, 0]
                 
                 elif (check_poly(self.rect2_b_eq, i, j) == True): #Check if the node is inside the bloated rect 2 obstacle space
                     if (check_poly(self.rect2_n_eq, i, j) == True): #Check if the node is inside the normal rect 2 obstacle space
-                        image[i][j] = [255, 255, 255]
+                        self.image[i][j] = [255, 255, 255]
                     else:
-                        image[i][j] = [255, 191, 0]
+                        self.image[i][j] = [255, 191, 0]
 
                 elif (check_poly(self.hexa_b_eq, i, j) == True): #Check if the node is inside the bloated hexagon obstacle space
                     if (check_poly(self.hexa_n_eq, i, j) == True): #Check if the node is inside the normal hexagon obstacle space
-                        image[i][j] = [255, 255, 255]
+                        self.image[i][j] = [255, 255, 255]
                     else:
-                        image[i][j] = [255, 191, 0]
+                        self.image[i][j] = [255, 191, 0]
 
                 elif (check_poly(self.trig_b_eq, i, j) == True): #Check if the node is inside the bloated triangle obstacle space
                     if (check_poly(self.trig_n_eq, i, j) == True): #Check if the node is inside the normal triangle obstacle space
-                        image[i][j] = [255, 255, 255]
+                        self.image[i][j] = [255, 255, 255]
                     else:
-                        image[i][j] = [255, 191, 0]
+                        self.image[i][j] = [255, 191, 0]
 
                 elif (not((i >=5 and i <= 595) and (j >= 5 and j <= 245))): #Check if the node is not inside the bloated wall space
-                    image[i][j] = [255, 191, 0]
+                    self.image[i][j] = [255, 191, 0]
  
-        return image #Return the image with the map
+        return self.image #Return the image with the map
+
+    def highLight_node(self, node, color): #Function to highlight a node in the map
+        self.image[node[0],node[1]] = color #Change the color of the node to the specified color
+
+    def highLight_position(self, node, color): #Function to highlight the point robot in the map
+        plot = self.image.copy()
+        cv2.circle(plot, (node[1],node[0]), 5, color, 3) #Draw a circle at the specified node
+        return plot
