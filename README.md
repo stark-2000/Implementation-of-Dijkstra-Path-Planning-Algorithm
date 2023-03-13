@@ -32,12 +32,12 @@
 ## Obstacle Space - Map:
    - Adobe Photoshop generated:
    <p align="center">
-   ![My Image](readme_image/Canvas.png)
+   <img src="readme_image/Canvas.png" />
    </p>
 
    - Desmos Visualization:
    <p align="center">
-   ![My Image](readme_image/Canvas_Desmos.png)
+   <img src="readme_image/Canvas_Desmos.png" />
    </p>
     
 
