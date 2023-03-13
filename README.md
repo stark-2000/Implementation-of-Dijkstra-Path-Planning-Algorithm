@@ -31,16 +31,16 @@
 
 ## Obstacle Space - Map:
     - Adobe Photoshop generated:
-    ![Canvas](https://user-images.githubusercontent.com/78305300/224708197-8fb049a1-620f-4d56-871d-d14a0a329b1e.png)
+    ![My Image](./readme_image/Canvas.png)
 
     - Desmos Visualization:
-    ![Canvas_Desmos](https://user-images.githubusercontent.com/78305300/224708236-ed080698-80df-41d1-8e80-fe355e98ab11.png)
-
+    ![My Image](./readme_image/Canvas_Desmos.png)
+    
 
 ## Demo Video:
     
-    https://user-images.githubusercontent.com/78305300/224708298-b112fd70-5f9f-4e55-aaa4-7f3296f69c38.mp4
-
+    ![My Image](./readme_image/Animation_Video_Output.mp4)
+    
 
 ## Dependencies:
  - visulization.py file (map creation and visualization script)
