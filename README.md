@@ -1,15 +1,25 @@
-##ENPM661 - Planning for Autonomous Robots - Project 2
-## Implementation-of-Dijkstra-Path-Planning-Algorithm
+# Implementation-of-Dijkstra-Path-Planning-Algorithm
 
-# Download the proj2_dhinesh_rajasekaran.zip to Downloads Folder & Extract
 ## Instructions:
+- Clone the repository to your local machine using the following command:
+    ``` 
+    git clone https://github.com/stark-2000/Implementation-of-Dijkstra-Path-Planning-Algorithm.git
+    ```
+    cd into the cloned repository
+    ```
+    cd Implementation-of-Dijkstra-Path-Planning-Algorithm
+    ```
+
+- Alternatively, you can download the zip file of the repository and extract it to your local machine.
+    ```
+    cd proj2_dhinesh_rajasekaran
+    ```
+
 - Open Terminal and Run the following commands & test with the following test cases:
     ```
-    cd Downloads
-    cd proj2_dhinesh_rajasekaran
     python3 dijkstra_Dhinesh_Rajasekaran.py
     ```
-- Now for Test Case 1, Enter the following values: when prompted or any random values
+- Now for Test Case 1, Enter the following values when prompted or any random values of your choice
     - Enter the start node as "20,20"
     - Enter the goal node as "425,200"
 
