@@ -44,7 +44,9 @@
 ## Demo Video:
  - Video shows exploration of nodes and finding the goal node for a point robot given start & goal nodes. Once the shortest path is found, it is backtracked and visualized using openCV.
    
-https://user-images.githubusercontent.com/78305300/224716580-2c29afed-6261-4706-a8f3-ef806391cdf0.mp4
+
+https://github.com/stark-2000/Implementation-of-Dijkstra-Path-Planning-Algorithm/assets/78305300/31344ec2-c955-4e7a-89a6-49996f0c67b6
+
 
 
 ## Dependencies:
